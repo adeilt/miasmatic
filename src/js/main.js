@@ -7,16 +7,6 @@ function addElement(id){
 
 		document['miasmatic_colors'] = colors;
 
-		// user_tags = {
-		// 	'Co-op': {
-		// 		flag_as: "like"
-		// 	},
-		// 	PvP: {
-		// 		flag_as: "dislike"
-		// 	}
-		// };
-		// saveTagsToCloud(user_tags);
-
 		const sidecar_div = document.createElement("div");
 		sidecar_div.id = id;
 
