@@ -1,4 +1,4 @@
-# Miasmatic <img src="https://github.com/adeilt/miasmatic/blob/master/src/icons/32.png?raw=true">
+# Miasmatic <img src="https://github.com/adeilt/miasmatic/blob/master/src/icons/48.png?raw=true">
 
 A Chrome extension to highlight Steam tags I like and don't like.
 
