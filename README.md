@@ -1,6 +1,12 @@
-# I'm about to rename this to Miasmatic to avoid anyone thinking that Steam or Valve had anything to do with it. This is the last commit under the name "Steam Sidecar".
+# Miasmatic
 
 A Chrome extension to highlight Steam tags I like and don't like.
+
+## Usage
+
+Use Ctrl-clicks to classify tags; Ctrl-left-click means you like the tag and Ctrl-right-click means you dislike the tag. Alt-left-click will remove a like/dislike classification from a tag.
+
+## A hazy view of one possible future
 
 Possible future features I'm considering:
 
@@ -8,5 +14,7 @@ Possible future features I'm considering:
 - searching the text of the reviews that show up on the page for certain keywords
 - searching the discussions for the game for certain keywords
 
-Thanks to stefanvd on github for the Chrome Extension template:
+## Attribution
+
+Thanks to stefanvd for the Chrome Extension template:
 https://github.com/stefanvd/browser-extension-starter-template

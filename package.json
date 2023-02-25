@@ -1,13 +1,13 @@
 {
-  "name": "steam-sidecar",
+  "name": "miasmatic",
   "version": "0.1",
   "description": "Chrome extension",
-  "homepage": "https://github.com/adeilt/steam_sidecar",
+  "homepage": "https://github.com/adeilt/miasmatic",
   "author": "Wil Langford",
   "license": "GPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:adeilt/steam_sidecar.git"
+    "url": "git@github.com:adeilt/miasmatic.git"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
