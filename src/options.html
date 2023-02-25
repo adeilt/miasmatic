@@ -35,10 +35,23 @@
 
 	<br>
 
+	<div id="tags_section" class="section">
+		<h2>Tags</h2>
+		<div id="tag_list_div"></div>
+
+		<input type="button" id="reset_tags" class="reset_button" value="reset all tags" disabled>
+		<label>
+			<input type="checkbox" id="confirm_reset_tags">confirm
+		</label>
+	</div>
+
+	<br>
+
 	<div id="transport_section" class="section">
 		<h2>Settings Import and Export</h2>
 
 		<div id="export_div">
+			<h3>export</h3>
 			<label>
 				copy exported settings from here:<br>
 				<input type="text" id="settings_export_text" readonly="readonly">
@@ -51,6 +64,8 @@
 		<br>
 
 		<div id="import_div">
+			<h3>import</h3>
+			<p><em>Warning! This will overwrite all of your settings including tags!</em></p>
 			<label>
 				paste previously exported settings here for import:<br>
 				<input type="text" id="settings_import_text">
@@ -63,18 +78,6 @@
 			<span id="import_error" class="error_span"></span>
 			<span id="import_message" class="message_span"></span>
 		</div>
-	</div>
-
-	<br>
-
-	<div id="tags_section" class="section">
-		<h2>Tags</h2>
-		<div id="tag_list_div"></div>
-
-		<input type="button" id="reset_tags" class="reset_button" value="reset all tags" disabled>
-		<label>
-			<input type="checkbox" id="confirm_reset_tags">confirm
-		</label>
 	</div>
 
 </body>

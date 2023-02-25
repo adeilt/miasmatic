@@ -18,12 +18,15 @@ body {
 
 .section {
   border: 1px solid gray;
-  min-width: 20%;
-  width: fit-content;
+  width: 90%;
   padding: 20px;
   display: inline-block;
   background: rgb(231, 231, 231);
   vertical-align: top;
+}
+
+.section:nth-of-type(odd) {
+  background: rgb(214, 214, 214);
 }
 
 .reset_button {
@@ -63,14 +66,20 @@ body {
 #import_div,
 #export_div {
   border: 1px solid gray;
-  min-width: 20%;
-  width: fit-content;
+  width: 40%;
   padding: 5px;
   display: inline-block;
   background: rgb(206, 206, 206);
   vertical-align: top;
+  margin: 10px;
 }
 
 #copy_exported_settings {
   background-color: lightgreen;
+  margin: 10px;
+}
+
+#settings_import_text,
+#settings_export_text {
+  width: 80%;
 }

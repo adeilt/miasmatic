@@ -40,21 +40,23 @@ function load_data(){
 		}
 
 		// TAGS
-		let tag_count = 0;
+		let like_count = 0, dislike_count = 0;
 		let list_div = document.getElementById("tag_list_div");
+		let sorted_tags = Array.from(Object.keys(user_tags)).sort();
 		for (const tag_name in user_tags) {
 			// console.log("Miasmatic: processing tag: " + tag_name);
-			tag_count++;
 
 			let tag = user_tags[tag_name];
 
 			let tag_span = document.createElement('span');
 			tag_span.style.background = colors['neutral_color'];
 			if (tag.flag_as == "like") {
+				like_count++;
 				tag_span.classList.add("sidecar_tag_like");
 				tag_span.style.background = colors['like_color'];
 			}
 			if (tag.flag_as == "dislike") {
+				dislike_count++;
 				tag_span.classList.add("sidecar_tag_dislike");
 				tag_span.style.background = colors['dislike_color'];
 			}
@@ -62,9 +64,9 @@ function load_data(){
 			tag_span.innerText = tag_name;
 
 			list_div.appendChild(tag_span);
-			list_div.appendChild(document.createElement('br'));
+			// list_div.appendChild(document.createElement('br'));
 		}
-		console.log("Miasmatic: loaded " + tag_count + " tags.")
+		console.log("Miasmatic: loaded " + like_count + " like tags and " + dislike_count + " tags.")
 
 		// OPTIONS
 		// no non-color, non-tag options yet
