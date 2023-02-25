@@ -4,21 +4,11 @@
 <meta charset="utf-8">
 <title data-i18n="optionpagetitle">Miasmatic Options</title>
 <link rel="stylesheet" type="text/css" href="css/options.css">
-<link rel="stylesheet" type="text/css" href="css/sidecar.css">
+<link rel="stylesheet" type="text/css" href="css/miasmatic.css">
 <script type="text/javascript" src="js/options.js"></script>
 </head>
 <body>
 	<h1>Miasmatic Options</h1>
-
-	<div id="tags_section" class="section">
-		<h2>Tags</h2>
-		<div id="tag_list_div"></div>
-
-		<input type="button" id="reset_tags" class="reset_button" value="reset all tags" disabled>
-		<label>
-			<input type="checkbox" id="confirm_reset_tags">confirm
-		</label>
-	</div>
 
 	<div id="colors_section" class="section">
 		<h2>Colors</h2>
@@ -33,13 +23,57 @@
 		</label>
 		<br>
 		<input type="color" id="neutral_color" name="neutral_color" value="#000000">
-			background color for tags you haven't expressed an opinion about
+			background color for unclassified tags
 		</label>
 		<br>
 
 		<input type="button" id="reset_colors" class="reset_button" value="reset colors" disabled>
 		<label>
 			<input type="checkbox" id="confirm_reset_colors">confirm
+		</label>
+	</div>
+
+	<br>
+
+	<div id="transport_section" class="section">
+		<h2>Settings Import and Export</h2>
+
+		<div id="export_div">
+			<label>
+				copy exported settings from here:<br>
+				<input type="text" id="settings_export_text" readonly="readonly">
+			</label>
+			<br>
+			<input type="button" id="copy_exported_settings" value="copy">
+			<span id="export_message" class="message_span"></span>
+		</div>
+
+		<br>
+
+		<div id="import_div">
+			<label>
+				paste previously exported settings here for import:<br>
+				<input type="text" id="settings_import_text">
+			</label>
+			<br>
+			<input type="button" id="import_settings" class="reset_button" value="import pasted settings" disabled>
+			<label>
+				<input type="checkbox" id="confirm_import_settings">confirm
+			</label>
+			<span id="import_error" class="error_span"></span>
+			<span id="import_message" class="message_span"></span>
+		</div>
+	</div>
+
+	<br>
+
+	<div id="tags_section" class="section">
+		<h2>Tags</h2>
+		<div id="tag_list_div"></div>
+
+		<input type="button" id="reset_tags" class="reset_button" value="reset all tags" disabled>
+		<label>
+			<input type="checkbox" id="confirm_reset_tags">confirm
 		</label>
 	</div>
 

@@ -1,48 +1,76 @@
 ﻿.dark {
-    --ext-primary-font-color: #fff;
-    --ext-body-background: #111111;
+  --ext-primary-font-color: #fff;
+  --ext-body-background: #111111;
 }
 
 .light {
-    --ext-primary-font-color: #000;
-    --ext-body-background: #fff;
+  --ext-primary-font-color: #000;
+  --ext-body-background: #fff;
 }
 
 body {
-    background: var(--ext-body-background);
-    color: var(--ext-primary-font-color);
-    font-family: Arial, sans-serif;
-    cursor: default;
-    font-size: 16px;
+  background: var(--ext-body-background);
+  color: var(--ext-primary-font-color);
+  font-family: Arial, sans-serif;
+  cursor: default;
+  font-size: 16px;
 }
 
 .section {
-    border: 1px solid gray;
-    min-width: 20%;
-    width: fit-content;
-    padding: 20px;
-    display: inline-block;
-    background: rgb(231, 231, 231);
-    vertical-align: top;
+  border: 1px solid gray;
+  min-width: 20%;
+  width: fit-content;
+  padding: 20px;
+  display: inline-block;
+  background: rgb(231, 231, 231);
+  vertical-align: top;
 }
 
 .reset_button {
-    background: red;
-    color: black;
-    font-weight: bold;
-    border-width:3px;
-    margin: 10px;
+  background: red;
+  color: black;
+  font-weight: bold;
+  border-width: 3px;
+  margin: 10px;
 }
 
 .reset_button:disabled {
-    background: rgb(254, 187, 187);
-    color: gray;
+  background: rgb(254, 187, 187);
+  color: gray;
+}
+
+.error_span {
+  color: darkred;
+  font-weight: bold;
+  min-width: 0;
+  min-height: 0;
+}
+
+.message_span {
+  font-weight: bold;
+  min-width: 0;
+  min-height: 0;
 }
 
 #tag_list_div {
-    padding: 10px;
-    margin: 20px;
-    border: 1px solid darkgray;
-    min-width: 10%;
-    width: fit-content;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid darkgray;
+  min-width: 10%;
+  width: fit-content;
+}
+
+#import_div,
+#export_div {
+  border: 1px solid gray;
+  min-width: 20%;
+  width: fit-content;
+  padding: 5px;
+  display: inline-block;
+  background: rgb(206, 206, 206);
+  vertical-align: top;
+}
+
+#copy_exported_settings {
+  background-color: lightgreen;
 }
